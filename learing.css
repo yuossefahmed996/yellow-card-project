@@ -1,0 +1,63 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+--Yellow: hsl(47, 88%, 63%);
+}
+@font-face {
+    font-family:'learing' ;
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:'learing' ;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: learing;
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+    font-family: learing;
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+*{
+padding:0 ;
+margin: 0;
+box-sizing: border-box;
+font-family: learing;
+}
+body{
+background-color:var(--Yellow);
+width: 100;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.card{
+    width: 29%;
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--Black);
+}
+.card .logo{
+    text-align: center;
+}
+.card .logo img{
+width: 100px;
+margin-bottom: 20px;
+
+}
+.card .text :first-child{
+background-color: var(--Yellow);
+color: var(--Black);
+padding: 8px;
+border-radius: 8px;
+font-weight: bolder;
+}
+.card .text :nth-child(2){
+margin: 20px 0px;
+}
